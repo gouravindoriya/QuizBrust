@@ -1,0 +1,147 @@
+
+#QuizContainer{
+
+    /* margin-top: 60px; */
+    width: 100vw;
+    /* padding: 0vw 10vw; */
+  /* height: 80vh; */
+   height: calc(100vh -  64px);
+   background: #ffe5e9;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px black;
+  
+  transition: all 0.5 ease;
+
+  color: white;
+  background-image: url("img/colorful-abstract-nebula-space-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#QuizContainer-question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+    width: 80%;
+    /* color: rgb(0, 0, 0); */
+    padding: 15px 10px ;
+    background: #b7e7ff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+  background: #bc57ff;
+}
+#QuizContainer-options{
+    width: 80%;
+    height: 20%;
+    background: #f7ff85;
+    padding: 20px 10px;
+  background: #527dff;
+  
+}
+#correct{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: sans-serif,serif;
+    font-weight: 400;
+    background: -webkit-linear-gradient(45deg, #ff9706 50%, #681dff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+} 
+.option{
+   width: 50%;
+    padding: 6px 20px; 
+    margin: 2px 0px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* box-shadow: 0px 2px 2px rgb(197, 197, 197); */
+    transition: all .7s ease ;
+    background-color: transparent;
+    border-radius: 4px;
+    
+}
+.option:hover{
+  
+outline: 1px solid #c7c7c7;
+font-weight: 700;
+}
+#QuizContainer-event{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding: 20px 10px;
+    /* background: rgb(240, 144, 173); */
+  color:black;
+  background: #999999;
+}
+#QuizContainer-event>button{
+    background: transparent;
+    padding: 4px 8px;
+  outline: none;
+border:1px solid black;
+  border-radius: 6px;
+  box-shadow:1px 1px 0px grey;
+  transition :all 0.5s ease;
+  color: white;
+}
+#QuizContainer-event>button:active{
+  border:1px solid white;
+}
+@media screen and (max-width: 500px) {
+    .QuizContainer-options{
+     grid-template-columns: 1fr;  
+        height: 30%; 
+    }
+    #QuizContainer-event{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: normal;
+        /* flex-direction: column; */
+        gap: 5px;
+        width: 80%;
+        padding: 20px 10px;
+        /* background: rgb(255, 123, 123); */
+    }
+}
+#timer {
+    width: calc(80% + 20px);
+    height: 2.5px;
+    /* background: rgb(255, 255, 255); */
+  }
+
+  #timersize {
+    width: 0%;
+    height: 100%;
+    background: rgb(0, 247, 0);
+  }
+
+  @keyframes timewidth {
+    0% {
+      width: 0%;
+    }
+    79% {
+      background: green;
+    }
+    80% {
+      width: 80%;
+      background: red;
+    }
+    100% {
+      background: red;
+      width: 100%;
+    }
+  }
