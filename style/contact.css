@@ -40,7 +40,7 @@ color: rgb(167, 167, 167);
 .contact-page-container-1 div{
 width: 300px;height: 300px;
 clip-path: circle(50%);
-background-image: url(/img/logo.jpg);
+background-image: url(img/logo.jpg);
 background-repeat: no-repeat;
 background-color: gray;
 background-position: center;
